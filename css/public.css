@@ -3,7 +3,16 @@
   box-shadow: 0 0 50px #3F0C1F;
   border: 2px solid #3F0C1F;
 }
-
+input[type="text"] {
+    color:black;
+}
+input[type="email"] {
+    color:black;
+}
+.button {
+    color: white;
+    background-color: black;
+}
 #menu-tile, #specials-tile, #map-tile {
   height: 250px;
   width: 100%;

@@ -22,11 +22,20 @@ function MenuService($http, ApiPath) {
       config.params = {'category': category};
     }
 
+
     return $http.get(ApiPath + '/menu_items.json', config).then(function (response) {
       return response.data;
     });
   };
 
+  service.getMenuItemsForShortName = function (shortname) {
+
+
+
+    return $http.get(ApiPath + '/menu_items/'+shortname+'.json').then(function (response) {
+      return response.data;
+    });
+  };
 }
 
 

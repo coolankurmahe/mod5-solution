@@ -1,0 +1,30 @@
+<div class="container">
+
+   <div id="userregistered" ng-if="!(myinfoCtrl.userUnRegistered)">
+     FirstName :   {{myinfoCtrl.userData.firstname}} </br>
+     LastName  :   {{myinfoCtrl.userData.lastname}} </br>
+     Email     :   {{myinfoCtrl.userData.email}} </br>
+     Phone     :    {{myinfoCtrl.userData.phone}} </br>
+
+         <!-- {{myinfoCtrl.userData.favItem.name}} </br>
+         {{myinfoCtrl.userData.favItem.description}}</br> -->
+          <div class="col-sm-5">
+         <div class="menu-item-photo">
+           <div>{{myinfoCtrl.userData.favItem.short_name}}</div>
+             <img class="img-responsive" width="250" height="150" ng-src="{{myinfoCtrl.baseApiPath}}/images/{{myinfoCtrl.userData.favItem.short_name}}.jpg" alt="{{myinfoCtrl.userData.favItem.name}}">
+           </div>
+         </div>
+         <div class="menu-item-description col-sm-7">
+           <h3 class="menu-item-title">{{myinfoCtrl.userData.favItem.name}}</h3>
+           <p class="menu-item-details">{{myinfoCtrl.userData.favItem.description}}</p>
+         </div>
+    </div>
+         <div id="usernotregistered" ng-if="myinfoCtrl.userUnRegistered">
+         Not Signed Up Yet.
+         <a ui-sref="public.signup" > Sign up Now!</a>
+         </div>
+       </div>
+  </div>
+
+
+<!-- myinfoCtrl.userData.menunum -->
