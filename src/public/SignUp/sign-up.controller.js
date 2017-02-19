@@ -11,13 +11,13 @@ function SignUpController(MenuService,SaveDataService) {
 $ctrl.isError = false;
  $ctrl.saveSuccessful = false;
   $ctrl.submit = function () {
-    console.log("Start  submit");
+    // console.log("Start  submit");
 //  $ctrl.completed = true;
 
   var promise = MenuService.getMenuItemsForShortName($ctrl.user.menunum);
 
     promise.then(function (itemforShortName) {
-      console.log(itemforShortName);
+      // console.log(itemforShortName);
       $ctrl.isError = false;
   /*    if(menuList.menu_items.length == 0)
           console.log("Nothing found");
@@ -34,7 +34,7 @@ $ctrl.isError = false;
        $ctrl.isError = true;
         $ctrl.saveSuccessful = false;
      })
-       console.log("End  submit");
+      //  console.log("End  submit");
   };
 }
 

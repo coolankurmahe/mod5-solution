@@ -10,19 +10,19 @@ function SaveDataService() {
   var service = this;
   var serviceUserInfo;
   service.saveUserInfo = function (userInfo) {
-    console.log("inside saveDate");
-  //console.log(userInfo.lastname);
+    // console.log("inside saveDate");
+
     serviceUserInfo = userInfo;
-    console.log(serviceUserInfo.lastname);
-  // userData.lastname = userInfo.lastname
-  // userData.lastname = userInfo.firstname
+    // console.log(serviceUserInfo.lastname);
+  // userData.lastname
+  // userData.lastname
   // userInfo.menunum
   // userInfo.email
   // userInfo.phone
   };
   service.getUserInformation = function () {
-    console.log("inside SaveDataService::getUserInformation");
-  //console.log(userInfo.lastname);
+    // console.log("inside SaveDataService::getUserInformation");
+
   return serviceUserInfo;
 
   };
